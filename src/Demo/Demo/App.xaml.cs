@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Views;
+using Xamarin.Forms;
 
 namespace Demo
 {
@@ -8,7 +9,7 @@ namespace Demo
 		{
 			InitializeComponent();
 
-			MainPage = new DemoPage();
+			MainPage = Resolver.Resolve<MainView>();
 		}
 
 		protected override void OnStart()
